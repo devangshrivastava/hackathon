@@ -1,5 +1,5 @@
 // TODO: replace with your actual Google OAuth Web Client ID
-const CLIENT_ID = 'YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com';
+const CLIENT_ID = '218393467474-l0202m60jhu31iedl23o2qkgusm8o3s1.apps.googleusercontent.com';
 
 document.getElementById('signin-btn').addEventListener('click', () => {
   // Launch Google OAuth flow
