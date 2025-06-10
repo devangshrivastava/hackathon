@@ -5,12 +5,19 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
