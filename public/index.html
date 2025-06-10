@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MailQuery · Summarize & Reply by AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-3xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">MailQuery</h1>
+      <button id="signin-btn" class="px-4 py-2 bg-blue-600 text-white rounded">Sign in with Google</button>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto p-6 space-y-6">
+    <section>
+      <h2 class="text-xl font-semibold">What is MailQuery?</h2>
+      <p>
+        MailQuery uses Google OAuth to securely access your inbox, summarize
+        emails via our MCP server, analyze them, and suggest replies—all in one click.
+      </p>
+    </section>
+
+    <section id="output" class="hidden p-4 border rounded bg-white">
+      <!-- Summaries & reply suggestions will appear here -->
+    </section>
+  </main>
+
+  <footer class="text-center p-4 text-sm">
+    <a href="privacy.html" class="underline mr-4">Privacy Policy</a>
+    <a href="terms.html" class="underline">Terms of Service</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
